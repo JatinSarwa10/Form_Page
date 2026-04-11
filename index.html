@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Metropolis</title>
+
+  <!-- Replace G-XXXXXXXXXX with your GA4 Measurement ID -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header>
+  <span>Metropolis</span>
+</header>
+
+<main>
+  <div class="card">
+
+    <div id="form-wrap">
+      <h1>Metropolis</h1>
+      <p>Fill out the form and we'll get back to you shortly.</p>
+
+      <!-- Replace YOUR_FORMSPREE_ID with your actual Formspree form ID -->
+     <form id="contact-form" action="https://formspree.io/f/xkopdjan" method="POST">
+
+        <div class="field">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required />
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="john@example.com" required />
+        </div>
+
+        <!-- <div class="field">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject" required>
+            <option value="" disabled selected>Select a subject</option>
+            <option>General Inquiry</option>
+            <option>Support</option>
+            <option>Feedback</option>
+            <option>Other</option>
+          </select>
+        </div> -->
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your message…" required></textarea>
+        </div>
+
+        <button type="submit" id="submit-btn">Submit</button>
+        <p class="note">We won't share your information.</p>
+
+      </form>
+    </div>
+
+    <div class="success" id="success">
+      <div class="icon">✓</div>
+      <h3>Message sent</h3>
+      <p>Thanks for responds</p>
+    </div>
+
+  </div>
+</main>
+
+<footer>© 2026 MyApp</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

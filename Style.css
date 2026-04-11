@@ -1,0 +1,128 @@
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f5f5f5;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 1rem 2rem;
+    }
+    header span {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #333;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 2rem;
+      width: 100%;
+      max-width: 420px;
+    }
+
+    .card h1 {
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: center;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+      color: #111;
+    }
+    .card p {
+      font-size: 0.85rem;
+      display: flex;
+      justify-content: center;
+      color: #777;
+      margin-bottom: 1.6rem;
+    }
+
+    .field { margin-bottom: 1rem; }
+
+    label {
+      display: block;
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: #444;
+      margin-bottom: 0.35rem;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 0.6rem 0.8rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem;
+      color: #222;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: #555;
+    }
+    input::placeholder, textarea::placeholder { color: #bbb; }
+    textarea { resize: vertical; min-height: 80px; }
+    select option { color: #222; }
+
+    button {
+      width: 100%;
+      padding: 0.65rem;
+      margin-top: 0.4rem;
+      background: #222;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    button:hover { background: #444; }
+    button:disabled { background: #999; cursor: not-allowed; }
+
+    .note {
+      font-size: 0.75rem;
+      color: #aaa;
+      text-align: center;
+      margin-top: 0.8rem;
+    }
+
+    .success {
+      display: none;
+      text-align: center;
+      padding: 1.5rem 0;
+    }
+    .success.show { display: block; }
+    .success .icon { font-size: 2rem; margin-bottom: 0.6rem; }
+    .success h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.3rem; }
+    .success p { font-size: 0.84rem; color: #777; }
+
+    footer {
+      text-align: center;
+      padding: 1.2rem;
+      font-size: 0.75rem;
+      color: #aaa;
+      border-top: 1px solid #e0e0e0;
+      background: #fff;
+    }
+  
